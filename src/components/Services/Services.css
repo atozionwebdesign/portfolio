@@ -1,0 +1,48 @@
+#servicesDiv{
+    background-color: var(--lighter-yellow);
+    padding: 25px 15px;
+    min-height: 100vh;
+    color: var(--dark-gray);
+}
+
+#webServicesDiv{
+    width:70%;
+    margin: 0 auto 100px auto;
+}
+
+#webServicesDiv .row{
+    margin-bottom: 50px;
+}
+
+.right{
+    text-align: right;
+    padding-right: 25px;
+}
+
+.left{
+    text-align: left;
+    padding-left: 25px;
+}
+
+.right-number, .left-number{
+    font-size: 200px;
+}
+
+.right-number{
+    border-right: 1px solid var(--dark-gray);
+}
+
+.left-number{
+    border-left: 1px solid var(--dark-gray);
+}
+
+.service{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.service-icon{
+    max-width: 50%;
+    margin-right: 50px;
+    float: left;
+}

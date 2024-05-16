@@ -1,38 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Barrio&family=Big+Shoulders+Display:wght@100..900&family=Bungee+Outline&family=Karantina:wght@300;400;700&family=Londrina+Outline&family=Londrina+Shadow&family=Londrina+Sketch&family=Londrina+Solid:wght@100;300;400;900&family=Monoton&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=Rubik+Vinyl&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
 .App {
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--light-gray);
+  background-color: var(--darker-gray);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Custom properties */
+:root{
+  /* Colors */
+  --darker-gray: #0a0a0a;
+  --dark-gray: #222222;
+  --gray: #848484;
+  --light-gray: #e6e6e6;
+  --yellow: #dab600;
+  --light-yellow: #ecda7f;
+  --lighter-yellow: #f9f3d8;
+  --teal: #008080;
+  --light-teal: #cce5e5;
+
+  /* Font sizes*/
+  --p-xlarge: 26px;
+  --p-large: 20px;
+  --p-mid: 16px;
+  --p-small: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Elements */
+/** Text Elements **/
+h1, h2, h3, h4{
+  font-family: "Londrina Solid", sans-serif;
+  font-style: normal;
+  text-shadow: 1px 1px var(--darker-gray);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2, h3, h4{
+  font-weight: 300;
+}
+h1{
+  font-size: 40px
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+  font-size: 25px;
+}
+
+a{
+  color: var(--teal);
+}
+
+/** Buttons **/
+.primary-btn, .primary-btn:hover{
+  background-color: var(--teal);
+  border-radius: 2px;
+  border: 1px solid var(--dark-gray);
+  color: var(--light-gray);
+  font-size: var(--p-large)
+}
+
+/* Custom classes */
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sm-icon {
+  padding: 0 5px;
+}
+
+/** Custom text classes **/
+.p-xlarge{
+  font-size: var(--p-xlarge);
+}
+
+.p-large{
+  font-size: var(--p-large);
+}
+
+.p-mid{
+  font-size: var(--p-mid);
+}
+
+.p-small{
+  font-size: var(--p-small);
+}
+
+.darker-gray{
+  color: var(--darker-gray);
+}
+
+.gray{
+  color: var(--gray)
+}
+
+.yellow{
+  color: var(--yellow)
+}
+
+.lighter-yellow{
+  color: var(--lighter-yellow)
+}
+
+.teal{
+  color: var(--teal)
+}
+
+.jumbo-text-bubble{
+  font-family: "Londrina Shadow", "Londrina Sketch", "Rubik Doodle Shadow", sans-serif;
+  font-size: 80px;
+  text-shadow: 1px 1px var(--darker-gray);
+}
+
+.jumbo-text-solid{
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.section-header{
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 50px;
+}
+
+.no-shadow{
+  text-shadow: none;
 }

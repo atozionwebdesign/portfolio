@@ -1,0 +1,6 @@
+#portfolioDiv{
+    height: 100vh;
+    background-color: var(--light-gray);
+    border-bottom: 2px solid var(--teal);
+
+}

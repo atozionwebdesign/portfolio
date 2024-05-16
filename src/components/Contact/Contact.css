@@ -1,0 +1,44 @@
+#contactDiv{
+    min-height: 100vh;
+    background-color: var(--darker-gray);
+}
+
+#contactDiv h1{
+    color: var(--teal);
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+#contactLogoDiv{
+    text-align: left;
+}
+
+#formContainer{
+    width:70%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+#contactForm .form-label{
+    color: var(--gray);
+    margin: 0
+}
+
+#contactForm .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    border-radius: 0;
+    color: var(--light-gray)
+}
+
+#contactForm .form-control:focus, #contactForm textarea{
+    border: 2px solid var(--teal) !important;
+    box-shadow: none;
+}
+
+#contactForm textarea {
+    border: 1px solid var(--gray) !important;
+}
