@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8703ba42.css",
+    "main.js": "/static/js/main.0ac70fc4.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/web-development-4.png": "/static/media/web-development-4.eb901127f6f491dc9e9f.png",
+    "static/media/form.png": "/static/media/form.d84d4e52785d23037cbf.png",
+    "static/media/logo-design-4.png": "/static/media/logo-design-4.4b72db99a6f9357e30ee.png",
+    "static/media/password-3.png": "/static/media/password-3.d4fda0b61a93519dbb08.png",
+    "static/media/web-ui-ux-design.png": "/static/media/web-ui-ux-design.2a5988dc06554f2fcff9.png",
+    "static/media/a-to-zion-logo-light-500.png": "/static/media/a-to-zion-logo-light-500.7d8de83b1c3a94d347ce.png",
+    "static/media/api-2.png": "/static/media/api-2.14f76962eebaa169ead4.png",
+    "static/media/eCommerce.png": "/static/media/eCommerce.ec415cfd5f0c8c4f7a2c.png",
+    "static/media/a-to-zion-logo-light-100.png": "/static/media/a-to-zion-logo-light-100.92a96c6459207eed7cc9.png",
+    "static/media/newsletter.png": "/static/media/newsletter.48eec6a5adc1f97a0b3c.png",
+    "static/media/business-card.png": "/static/media/business-card.b07c18b94395984581e0.png",
+    "index.html": "/index.html",
+    "main.8703ba42.css.map": "/static/css/main.8703ba42.css.map",
+    "main.0ac70fc4.js.map": "/static/js/main.0ac70fc4.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8703ba42.css",
+    "static/js/main.0ac70fc4.js"
+  ]
+}
