@@ -6,14 +6,17 @@ const About = () => {
       <div id="jumboDiv" className="jumbo-text-bubble yellow">
         <p className="section-header">ABOUT</p>
         <span className="jumbo-text-solid">LOGIC</span> WILL GET YOU FROM{" "}
-        <span className="teal jumbo-text-solid">A</span>{" "}
-        TO{" "}
+        <span className="teal jumbo-text-solid">A</span> TO{" "}
         <span className="teal jumbo-text-solid">Z</span>.{" "}
         <span className="jumbo-text-solid">IMAGINATION</span> WILL TAKE YOU
         EVERYWHERE.
         <div
           className="jumbo-text-solid no-shadow"
-          style={{ textAlign: "right", fontSize: "var(--p-large)", width:"90%" }}
+          style={{
+            textAlign: "right",
+            fontSize: "var(--p-large)",
+            width: "90%",
+          }}
         >
           - ALBERT EINSTEIN
         </div>
@@ -37,12 +40,15 @@ const About = () => {
           <span className="teal" style={{ fontWeight: "bold" }}>
             Z
           </span>
-          ion. We are a boutique web development and design company with over 15 years of experience designing and developing simple <i className="bi bi-arrow-right"></i> custom, high-traffic
-          websites and applications.
-          <div style={{margin:"50px 0"}}>
-          Have an idea for a site or web application or graphic design project? It's what we do. Let us work with you to bring it to fruition!
+          ion. We are a boutique web development and design company with over 15
+          years of experience designing and developing simple{" "}
+          <i className="bi bi-arrow-right"></i> custom, high-traffic websites
+          and applications.
+          <div style={{ margin: "50px 0" }}>
+            Have an idea for a site or web application or graphic design
+            project? It's what we do. Let us work with you to bring it to
+            fruition!
           </div>
-
         </div>
       </div>
     </div>
