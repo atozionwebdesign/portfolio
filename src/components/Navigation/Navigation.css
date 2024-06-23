@@ -1,26 +1,90 @@
 .navbar{
-    padding: 0 10px;
-}
-.navbar-toggler{
-    border: none;
-    color: var(--yellow);
-    margin-top: -50px;
-}
-
-.navbar-toggler:focus{
-    box-shadow: none;
-}
-
-.navbar-toggler-icon{
-    background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27><path stroke=%27rgba%28218, 182, 0, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/></svg>");
+width: 70%;
+margin: 0  auto;
+padding: 0;
 }
 
 .navbar-nav{
     text-align: right;
-    padding-right: 12px;
-    margin-top: -50px;
 }
 
-.navbar-nav .nav-link {
-    color: var(--darker-gray)
+/* .nav-link, .nav-link:visited {
+    color: var(--light-teal) !important
+}
+
+.nav-link:hover{
+    text-decoration: none !important;
+} */
+
+.toggle, .toggle:focus, .toggle:active, .toggle:hover{
+    background-color: transparent !important;
+    border: none;
+}
+
+.toggle-services, .toggle-home, .toggle-portfolio{
+    font-size: x-large;
+}
+
+/* Navigation Modal */
+#navModal .modal-content{
+    background-color: var(--gray);
+    padding: 2% 15%;
+}
+
+#navModal .modal-header{
+    border-bottom: none;
+}
+
+#navModal .modal-body{
+    /* padding-left: 0;
+    padding-right: 0; */
+}
+
+#navModal .btn-close{
+    background: url('data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23ecda7f%27><path d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/></svg>');
+    width: 0.1em;
+    height: 0.1em;
+    opacity: 1;
+}
+
+/* Home */
+.navbar-home{
+    border-bottom: 1px solid var(--lighter-yellow);
+}
+
+.toggle-home:focus, .toggle-home:hover, .toggle-home:active{
+    color: var(--yellow) !important;
+}
+
+.tagline-home{
+    color: var(--light-yellow);
+    font-weight: bold
+}
+
+.toggle-home{
+    color: var(--yellow);
+}
+
+/* Services */
+.navbar-services{
+    border-bottom: 1px solid var(--light-teal);
+}
+
+.toggle-services:focus, .toggle-services:hover, .toggle-services:active{
+    color: var(--light-teal) !important;
+}
+
+.tagline-services, .toggle-services{
+    color: var(--teal);
+    font-weight: bold;
+}
+
+/* Portfolio */
+.navbar-portfolio{
+    border-bottom: 1px solid var(--light-teal);
+}
+
+.tagline-portfolio, .toggle-portfolio{
+    color: var(--lighter-teal);
+    font-weight: bold;
 }

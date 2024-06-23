@@ -1,9 +1,9 @@
-#contactDiv{
+#contact{
     min-height: 100vh;
     background-color: var(--darker-gray);
 }
 
-#contactDiv h1{
+#contact h1{
     color: var(--teal);
     text-decoration: underline;
     text-decoration-color: var(--yellow);

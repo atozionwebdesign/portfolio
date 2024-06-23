@@ -1,22 +1,19 @@
 /* Styles */
 import "./App.css";
+import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import Home from "./pages/Home/Home";
+import ScrollToTop from "./components/sub-components/ScrollToTop";
 
 function App() {
+  // const [color, changeColor] = useState();
+
+  useEffect(() => {}, []);
+
   return (
     <div className="App">
-      <Router>
-        <>
-          <Routes>
-            <Route path="/" element={<Home />}>
-
-            </Route>
-          </Routes>
-        </>
-      </Router>
+      <ScrollToTop />
+      <Outlet />
     </div>
   );
 }

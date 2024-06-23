@@ -3,10 +3,11 @@ import Col from "react-bootstrap/Col";
 import "./Footer.css";
 
 const Footer = () => {
+
   return (
     <div id="footerDiv">
       <Row>
-        <Col sm={6}>
+        <Col sm={9}>
           <p className="footer-header">A To Zion Web Design, LLC</p>
           <p>
             <span style={{ color: "var(--teal)" }}>
@@ -38,27 +39,27 @@ const Footer = () => {
           <p className="footer-subheader">Services</p>
           <ul>
             <li>Custom Website Design & Development</li>
-            <li>eCommerce Website Development</li>
-            <li>Email Marketing</li>
+            {/* <li>eCommerce Website Development</li> */}
+            {/* <li>Email Marketing</li> */}
             <li>Graphic Design & Branding</li>
             <li>Mobile Application Development</li>
             <li>Portfolio Showcase</li>
-            <li>UI / UX Design</li>
+            {/* <li>UI / UX Design</li> */}
             <li>...and so much more!</li>
           </ul>
         </Col>
-        <Col sm={1}></Col>
-        <Col sm={2}>
+        {/* <Col sm={1}></Col> */}
+        {/* <Col sm={2}>
           <p className="footer-subheader">Site Links</p>
           <ul>
             <li>Login</li>
             <li>Signup</li>
             <li>How To Play</li>
           </ul>
-        </Col>
+        </Col> */}
       </Row>
 
-      <div id="copyrightDiv">
+      <div id="copyrightDiv" className="teal">
         <p id="copyright">
           <i className="bi bi-c-circle"></i> 2024 A To Zion Web Design, LLC |
           All Rights Reserved

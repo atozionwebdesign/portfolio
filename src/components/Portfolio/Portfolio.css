@@ -1,6 +1,35 @@
-#portfolioDiv{
-    height: 100vh;
-    background-color: var(--light-gray);
-    border-bottom: 2px solid var(--teal);
+#portfolio{
+    color: var(--lighter-teal);
+}
 
+#portfolioNav, #portfolioNav .nav-link{
+    width: fit-content;
+}
+
+#portfolioNav{
+    position: absolute;
+    bottom: 10%;
+    z-index: 10;
+}
+
+#portfolioNav .nav-link, #portfolioNav .nav-link:visited{
+    color: var(--light-teal);
+}
+
+#portfolioNav .nav-link:hover{
+    color: var(--lighter-teal);
+}
+
+#portfolioNav .nav-link:active, #portfolioNav .nav-link.active{
+    background-color: transparent;
+    color: var(--lighter-teal);
+    font-weight: bold;
+    font-size: x-large;
+    border: 1px solid var(--lighter-teal);
+    border-radius: 0;
+    font-family: "Londrina Solid", sans-serif;
+}
+
+.tab-content{
+    padding: 1% 0;
 }

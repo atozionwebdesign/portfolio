@@ -1,0 +1,7 @@
+#portfolioDiv{
+    background-color: var(--dark-teal);
+}
+
+#portfolioNav .nav-link p{
+    margin-bottom: 0
+}

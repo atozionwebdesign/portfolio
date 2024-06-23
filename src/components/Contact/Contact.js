@@ -4,7 +4,7 @@ import { Row, Col, Form, Button } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div id="contactDiv">
+    <div id="contact">
       <div id="contactLogoDiv">
         <img
           src={require("../../assets/a-to-zion-logo-light-100.png")}

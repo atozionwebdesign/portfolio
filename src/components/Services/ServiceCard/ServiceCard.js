@@ -5,7 +5,6 @@ import { Card } from "react-bootstrap";
 const ServiceCard = (props) => {
   const img = props.img;
   const service = props.service;
-  // const description = props.description;
 
   return (
     <Card className="mx-auto my-2">
