@@ -1,64 +1,77 @@
 import "./NavigationModal.css";
-
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const NavigationModal = () => {
   return (
     <>
-<div id="navModalDiv">
-      <Row>
-        <Col
-          sm={6}
-          className="centerVertical"
-          style={{ borderRight: "1px solid var(--light-yellow)" }}
-        >
-          <div>
-            <h1>
-              <Link to={`/`}>HOME</Link>
-            </h1>
-            <h1>
-              <Link to={`/portfolio`}>PORTFOLIO</Link>
-            </h1>
-            <h1>
-              <Link to={`/services`}>SERVICES</Link>
-            </h1>
-            <h1>
-              <Link to={`/blog`}>BLOG</Link>
-            </h1>
-            <div>
-              <p
-                style={{
-                  display: "inline-block",
-                  marginRight: "25px",
-                  marginTop: "25px",
-                }}
-              >
-                RESUME
-              </p>
-              <p style={{ display: "inline-block" }}>CONTACT</p>
-            </div>
-          </div>
-        </Col>
-        <Col sm={6} className="centerVertical">
-          <div>
-            <p>LET'S DISCUSS A</p>
-            {/* <h1 style={{ transform: "scale(2)", marginBottom:"25px" }}>NEW</h1> */}
-            <h1 className="special-cursor" style={{ transform: "scale(1.75)" }}>
-              <Link to={`/contact`}>NEW PROJECT</Link>
-            </h1>
-
-          </div>
+      <Row
+        id="navModalDiv"
+        className="justify-content-center align-items-center no-margin"
+      >
+        <Col>
+          <Row className="justify-content-center align-items-center">
+            <Col sm={6} className="right-bordered-col">
+              <div>
+                <h1>
+                  <Link to={`/`}>HOME</Link>
+                </h1>
+                <h1>
+                  <Link to={`/services`}>SERVICES</Link>
+                </h1>
+                <h1>
+                  <Link to={`/portfolio`}>PORTFOLIO</Link>
+                </h1>
+                <h1>
+                  {/* <Link to={`/blog`}>BLOG</Link> */}
+                  BLOG
+                </h1>
+                <div>
+                  <a href={require("../../../documents/Resume-Stith,Ashley-Jul24.pdf")} alt="" target="_blank" rel="noreferrer">
+                  <p
+                    className="resume-link"
+                    style={{
+                      display: "inline-block",
+                      // marginRight: "25px",
+                    }}
+                  >
+                    RESUME
+                  </p>
+                  </a>
+                  {/* <p style={{ display: "inline-block" }}>CONTACT</p> */}
+                </div>
+              </div>
+            </Col>
+            <Col sm={6}>
+              <div className="top-bordered-col">
+                <p className="no-margin">LET'S DISCUSS A</p>
+                <h1 className="special-cursor">
+                  <Link to={`/contact`}>NEW PROJECT</Link>
+                </h1>
+              </div>
+            </Col>
+          </Row>
         </Col>
       </Row>
-
-    </div>
-    <div id="navModalFooter">
-    <i className="bi bi-github"></i>
-    <i className="bi bi-linkedin"></i>
-    </div>
+      <div id="navModalFooter">
+        <a
+          href="https://github.com/atozionwebdesign"
+          alt=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ashleystith/"
+          alt=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bi bi-linkedin"></i>
+        </a>
+      </div>
     </>
-
   );
 };
 

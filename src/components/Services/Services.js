@@ -1,10 +1,8 @@
 import "./Services.css";
-
 import { Row, Col } from "react-bootstrap";
-
 // External data
-import { services } from "../../../data/ServicesData";
-import ServiceCard from "../ServiceCard/ServiceCard";
+import { services } from "../../data/ServicesData";
+import ServiceCard from "./ServiceCard/ServiceCard";
 
 const Services = () => {
   const webServices = services.filter((service) => service.type === "web");
@@ -13,66 +11,9 @@ const Services = () => {
   );
 
   return (
-    <div id="services" className="section-div">
+    <div id="services">
       <div className="content">
-        <div className="jumbo-text-solid services-header">
-          <div id="servicesHeader1">
-            <div>
-              WE{" "}
-              <span className="services-emphasis">
-                DES
-                <img
-                  id="paintBrush"
-                  src={
-                    require("../../../assets/services/paint-brush.svg").default
-                  }
-                  alt=""
-                />
-                GN{" "}
-              </span>
-            </div>
-            <div>
-              &{" "}
-              <span className="services-emphasis">
-                DEVEL
-                <img
-                  id="gear"
-                  src={require("../../../assets/services/gear.svg").default}
-                  alt=""
-                />
-                P
-              </span>{" "}
-            </div>
-            <div>WEBSITES</div>
-          </div>
-          <div id="servicesHeader2">
-            <div>WE ALSO DO</div>
-            <div>
-              <span className="services-emphasis">
-                BR
-                <img
-                  id="lightbulb"
-                  src={
-                    require("../../../assets/services/lightbulb.svg").default
-                  }
-                  alt=""
-                />
-                NDING
-              </span>{" "}
-              &
-            </div>
-            <div>
-              <span className="services-emphasis">
-                MARKETING
-                <img
-                  id="bullhorn"
-                  src={require("../../../assets/services/bullhorn.svg").default}
-                  alt=""
-                />
-              </span>
-            </div>
-          </div>
-        </div>
+
         <div id="servicesContent">
           <div
             className="jumbo-text-bubble"
@@ -124,7 +65,7 @@ const Services = () => {
                 custom workflow. Front-end <i className="bi bi-arrow-right"></i>{" "}
                 back-end and database capabilities.
               </p>
-              <div className="jumbo-text-solid right">
+              <div className="jumbo-text-solid services-right">
                 WEB DESIGN & DEVELOPMENT
               </div>
             </Col>
@@ -151,10 +92,10 @@ const Services = () => {
               >
                 Visual concept creation to communicate your ideas and captivate
                 your target market. From new logos{" "}
-                <i className="bi bi-arrow-right"></i> flyers, we deliver
-                stunning and high quality graphic design services.
+                <i className="bi bi-arrow-right"></i> flyers, I deliver stunning
+                and high quality graphic design services.
               </p>
-              <div className="jumbo-text-solid left">
+              <div className="jumbo-text-solid services-left">
                 GRAPHIC DESIGN & BRANDING
               </div>
             </Col>

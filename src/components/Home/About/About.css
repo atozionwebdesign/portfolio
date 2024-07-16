@@ -1,44 +1,48 @@
-#about{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#jumboDiv{
-    width: 100%;
-}
-
-#about .jumbo-text-bubble{
-  font-size: 4vw;
-
-}
-
-#aboutQuoteText{
-  padding-top: 20vh ;
-  height: 100vh;
-  width: 90%;
+.about-line{
+  border-bottom: 1px solid var(--yellow);
   margin: 0 auto;
+}
+/*** About Quote ***/
+#aboutQuoteText{
+  height: 100vh;
   font-weight: 300;
+}
+
+/*** About Narrative ***/
+#aboutNarrativeContainer{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
 }
 
 #aboutNarrativeText{
-  padding-top: 10vh;
-  height: 100vh;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   color: var(--light-yellow);
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 20px;
   font-weight: 300;
+}
+
+#aboutTagline{
+  text-transform: uppercase;
+  position: fixed;
+  top:calc(50% - 75px);
+  left: 5%;
+  translate: transform(-50%, -50%);
+  width: 90%;
+  z-index: 3;
+  font-weight: 300;
+  opacity: 0;
+}
+
+#narrativeAnimate{
+  position: relative;
 }
 
 .narrativeMove{
   display: inline-block;
+}
+
+.target-container{
+  margin: 0 auto;
 }
 
 #a, #z {
@@ -46,72 +50,178 @@
 }
 
 #aTarget{
-  position:fixed;
-  left: 40%;
-  top: 55%;
+  margin: 0 auto;
   width: 10px;
   height: 10px
 }
 
 #arrowTarget{
-  position: fixed;
-  left: 50%;
-  top: 55%;
+  margin: 0 auto;
   width: 10px;
   height: 10px
 }
 
 #zTarget{
-  position: fixed;
-  right: 40%;
-  top: 55%;
+  margin: 0 auto;
   width: 10px;
   height: 10px
 }
 
 #aboutCrown{
-  width: 4vw;
-  position: fixed;
-  right: 38.2%;
-  top:44%
+  margin-bottom: 15px
 }
 
-#aboutTagline{
-  text-transform: uppercase;
-  position: fixed;
-  top:20%;
-  left: 15%;
-  width: 70%;
-  margin: 0 auto;
-  z-index: 3;
-  font-weight: 300;
-  opacity: 0;
-}
-
+/*** About Techn ***/
 #aboutTech{
 min-height: 100vh;
 color: var(--light-yellow);
-width: 80%;
 margin: 0 auto;
-padding-top: 10vh;
-
+padding: 50px 10px;
 }
 
-/* Skills */
+/* Skills Table */
 .progress{
   background-color: var(--lighter-teal);
 }
 .progress-bar{
   background-color: var(--teal);
 }
-#skillsDiv h3{
-  font-weight: bold;
+
+#skillsKeyDiv{
+  margin: 50px 0;
 }
 
-/* Special Cursor */
-#about .special-cursor a{
+#skillsDiv h1{
+  padding: 0 12px;
 }
 
-#about .special-cursor a:hover{
+/*** Media Queries ***/
+@media (min-width:360px) {
+  .about-line{
+    width: 90%
+  }
 
+  #about .jumbo-text-bubble{
+    font-size: 30px;
+  }
+
+  #aboutNarrativeText, .skill, #skillsKeyDiv p{
+    font-size: 14px;
+  }
+
+  #aboutCrown{
+    width: 40px;
+  }
+
+  #skillsDiv h1, #skillsDiv h2{
+    text-align: left;
+  }
+
+  #skillsDiv h2{
+    padding-top: 20px;
+  }
+
+  .skill{
+    text-align: left;
+    padding-top: 15px;
+    margin:0;
+  }
+
+  .skills-key{
+    margin: 0;
+    text-align: left;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width:576px) {
+  .about-line{
+    width: 80%
+  }
+
+  #aboutQuoteText, #aboutNarrativeContainer, #skillsDiv, #skillsKeyDiv{
+    padding: 0 10% !important;
+  }
+
+  #aboutTagline{
+    left: 10%;
+    width: 80%;
+  }
+
+  .target-container{
+    width: 70%;
+  }
+
+  #skillsDiv h1, #skillsDiv h2{
+    text-align: center;
+  }
+
+  #skillsDiv h2{
+    padding-top: 0;
+    font-weight: bold
+  }
+
+  .skill{
+    padding-top: 0;
+  }
+
+  .skill-right, .skills-key-right{
+    text-align: right;
+  }
+
+  #skillsDiv .col-sm-6{
+    padding-top: 10px;
+  }
+
+  .progress{
+    width: 80%;
+  }
+
+  .progress-right{
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .skills-key{
+    padding-top: 0;
+  }
+
+}
+
+@media (min-width:768px) {
+  #aboutNarrativeText, .skill{
+    font-size: 16px;
+  }
+
+  #aboutCrown{
+    width: 45px;
+  }
+
+  .target-container{
+    width: 60%;
+  }
+}
+
+@media (min-width:992px) {
+  #about .jumbo-text-bubble{
+    font-size: 50px;
+  }
+
+  .target-container{
+    width: 50%;
+  }
+}
+
+@media (min-width:1200px) {
+  #aboutNarrativeText{
+    font-size: 18px;
+  }
+
+  #aboutCrown{
+    width: 50px;
+    margin-bottom: 15px
+  }
+  .target-container{
+    width: 40%;
+  }
 }

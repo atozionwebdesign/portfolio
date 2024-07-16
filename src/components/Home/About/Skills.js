@@ -11,15 +11,18 @@ const Skills = () => {
   return (
     <div id="skillsDiv">
       <h1 className="yellow">WEB DEVELOPMENT / DESIGN SKILLS</h1>
-      <Row>
+      <Row className="no-margin">
         <Col sm={6}>
-          <h3>FRONT-END</h3>
+          <h2>FRONT-END</h2>
           {frontend.map((skill, index) => (
-            <Row key={index}>
-              <Col sm={6} style={{ textAlign: "right" }}>
-                {skill.skill}
+            <Row
+              key={index}
+              className="justify-content-center align-items-center"
+            >
+              <Col sm={6}>
+                <p className="skill skill-right">{skill.skill}</p>
               </Col>
-              <Col sm={6} style={{ textAlign: "left" }}>
+              <Col sm={6}>
                 <ProgressBar
                   animated
                   now={skill.progress}
@@ -32,19 +35,23 @@ const Skills = () => {
         </Col>
 
         <Col sm={6}>
-          <h3>BACK-END</h3>
+          <h2>BACK-END</h2>
           {backend.map((skill, index) => (
-            <Row key={index}>
-              <Col sm={6} style={{ textAlign: "right" }}>
-                {skill.skill}
-              </Col>
-              <Col sm={6}>
+            <Row
+              key={index}
+              className="justify-content-center align-items-center"
+            >
+              <Col xs={{ span: 12, order: 2 }} sm={{ span: 6, order: 1 }}>
                 <ProgressBar
                   animated
                   now={skill.progress}
                   label={`${skill.progress}%`}
                   visuallyHidden
+                  className="progress-right"
                 />
+              </Col>
+              <Col xs={{ span: 12, order: 1 }} sm={{ span: 6, order: 2 }}>
+                <p className="skill skill-left">{skill.skill}</p>
               </Col>
             </Row>
           ))}
@@ -54,14 +61,16 @@ const Skills = () => {
       <h1 className="yellow" style={{ marginTop: "25px" }}>
         GRAPHIC DESIGN / OTHER SKILLS
       </h1>
-      <Row style={{paddingBottom: "50px"}}>
+      <Row className="no-margin">
         <Col sm={6}>
-        <h3>GRAPHIC DESIGN</h3>
-
+          <h2>GRAPHIC DESIGN</h2>
           {graphic.map((skill, index) => (
-            <Row key={index}>
-              <Col sm={6} style={{ textAlign: "right" }}>
-                {skill.skill}
+            <Row
+              key={index}
+              className="justify-content-center align-items-center"
+            >
+              <Col sm={6}>
+                <p className="skill skill-right">{skill.skill}</p>
               </Col>
               <Col sm={6}>
                 <ProgressBar
@@ -75,27 +84,28 @@ const Skills = () => {
           ))}
         </Col>
         <Col sm={6}>
-        <h3>OTHER SKILLS</h3>
-
+          <h2>OTHER SKILLS</h2>
           {other.map((skill, index) => (
-
-            <Row key={index}>
-              <Col sm={6} style={{ textAlign: "right" }}>
-                {skill.skill}
-              </Col>
-              <Col sm={6}>
+            <Row
+              key={index}
+              className="justify-content-center align-items-center"
+            >
+              <Col xs={{ span: 12, order: 2 }} sm={{ span: 6, order: 1 }}>
                 <ProgressBar
                   animated
                   now={skill.progress}
                   label={`${skill.progress}%`}
                   visuallyHidden
+                  className="progress-right"
                 />
+              </Col>
+              <Col xs={{ span: 12, order: 1 }} sm={{ span: 6, order: 2 }}>
+                <p className="skill skill-left">{skill.skill}</p>
               </Col>
             </Row>
           ))}
         </Col>
       </Row>
-
     </div>
   );
 };

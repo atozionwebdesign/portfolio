@@ -1,0 +1,112 @@
+@media (min-width:360px) {
+    #servicesHeaderDiv{
+        width: 90%;
+    }
+
+    .services-header{
+        font-size: 18vw;
+        line-height: 17vw;
+    }
+
+    #paintBrush{
+        width: 12vw;
+        margin: -2vw -4vw 0 -4vw;
+    }
+
+    #gear{
+        width: 15vw;
+        margin-top: -3vw
+    }
+
+    #lightbulb{
+        width: 15vw;
+        margin: -2vw -2vw 0 -1vw;
+    }
+
+    #bullhorn{
+        width: 15vw;
+        margin: -5vw 0 0 1vw;
+    }
+}
+
+@media (min-width:768px) {
+    #servicesHeaderDiv{
+        width: 70%;
+    }
+    .services-header{
+        font-size: 13.25vw;
+        line-height: 13vw;
+    }
+
+    #paintBrush{
+        width: 9vw;
+        margin: -2vw -3.5vw 0 -3vw;
+    }
+
+    #gear{
+        width: 11vw;
+        margin-top: -2vw
+    }
+
+    #lightbulb{
+        width: 11vw;
+        margin: -2vw -1.5vw 0 -1vw;
+    }
+
+    #bullhorn{
+        width: 11vw;
+    }
+}
+
+@media (min-width:1200px) {
+    .services-header{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+
+    #paintBrush{
+        width: 7vw;
+        margin: -2vw -2.5vw 0 -2.5vw;
+    }
+
+    #gear{
+        width: 8vw;
+        margin-top: -1.5vw
+    }
+
+    #lightbulb{
+        width: 8vw;
+        margin: -2vw -1vw 0 -.75vw;
+    }
+
+    #bullhorn{
+        width: 8vw;
+    }
+}
+
+#servicesHeaderDiv{
+    color: var(--light-teal);
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+    margin: 25px auto 75px auto;
+}
+
+#servicesHeader2{
+    position: absolute;
+    top: 0;
+}
+
+.services-emphasis{
+    text-shadow: 2px 2px var(--darker-gray);
+    font-weight: bold;
+    color: var(--teal);
+}
+
+#paintBrush{
+    rotate: 40deg;
+}
+
+#bullhorn{
+    rotate: -15deg;
+}

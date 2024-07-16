@@ -2,8 +2,6 @@ import "./Portfolio.css";
 import { useEffect } from "react";
 import gsap from "gsap";
 
-import { useOutletContext } from "react-router-dom";
-
 import { navAnimation } from "../../utils/Animate";
 
 /* Components */
@@ -12,9 +10,8 @@ import PortfolioComponent from "../../components/Portfolio/Portfolio";
 import Footer from "../../components/Footer/Footer";
 
 const Portfolio = () => {
-
+  // const [color, changeColor] = useState("var(--lighter-yellow)");
   useEffect(() => {
-
     const ctx = gsap.context(() => {
       navAnimation();
     });

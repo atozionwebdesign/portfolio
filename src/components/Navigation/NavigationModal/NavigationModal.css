@@ -1,47 +1,104 @@
 #navModalDiv{
     position: relative;
-    /* width: 100%; */
-    color: var(--light-yellow);
+    color: var(--teal);
     border-top: 1px solid var(--light-yellow);
     border-bottom: 1px solid var(--light-yellow);
-    height: 80%;
-    /* padding: 2%; */
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-}
-
-#navModalDiv .row{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-#navModalDiv .centerVertical{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#navModalDiv a{
-    color: var(--light-yellow);
+#navModalDiv a, #navModalDiv h1{
+    color: var(--yellow) !important;
     text-decoration: none;
 }
 
 #navModalDiv a:hover{
-    color: var(--lighter-yellow);
+    color: var(--light-yellow);
 }
 
 #navModalFooter{
-    color: var(--light-yellow);
-    /* width: 80%; */
+    color: var(--yellow);
     margin: 25px auto;
 }
 
 #navModalFooter i{
-    font-size: 2vw;
     margin-right: 10px;
+    color: var(--yellow);
+}
+
+#navModalDiv .special-cursor a:hover{
+    color: var(--light-yellow) !important;
+}
+
+@media (min-width:360px) {
+    #navModalDiv{
+        height: calc(100vh - 155px);
+    }
+
+    .resume-link{
+        margin-bottom: 25px
+    }
+
+    .top-bordered-col{
+        border-top: 1px solid var(--light-yellow);
+        padding-top: 25px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #navModalFooter{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:576px) {
+    #navModalDiv{
+        height: calc(100vh - 180px);
+    }
+
+    .right-bordered-col{
+        border-right: 1px solid var(--light-yellow);
+    }
+
+    .top-bordered-col{
+        border: none;
+        width: 100%;
+        padding: 0
+    }
+
+    .resume-link{
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width:768px) {
+    #navModalDiv{
+        height: calc(100vh - 210px);
+    }
+
+    #navModalFooter{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:992px) {
+   #navModalDiv h1{
+        font-size:45px
+    }
+}
+
+@media (min-width:1200px) {
+    #navModalDiv{
+        height: calc(100vh - 250px);
+    }
+
+    #navModalDiv h1{
+        font-size:50px
+    }
+
+    #navModalFooter{
+        font-size: 30px;
+    }
 }

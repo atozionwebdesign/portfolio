@@ -1,8 +1,6 @@
 import "./Home.css";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import gsap from "gsap";
-
-import { useOutletContext } from "react-router-dom";
 
 import {
   navAnimation,
@@ -20,7 +18,6 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   useEffect(() => {
-    // changeColor("var(--dark-gray");
     let ctx;
     if (!sessionStorage.getItem("visited")) {
       ctx = gsap.context(() => {

@@ -91,7 +91,7 @@ const headerScene1 = () => {
     type: "words",
   });
 
-  const splitComputerText = new SplitText("#computerText", {
+  const splitComputerText = new SplitText("#computerTextDiv", {
     type: "chars, words",
   });
 
@@ -103,10 +103,10 @@ const headerScene1 = () => {
 
   const crownTl = gsap
     .timeline({ repeat: -1 })
-    .to("#crown", { x: "-8vw", delay: 1 })
+    .to("#crown", { x: xLeft, delay: 1 })
     .to("#crown", { rotate: -45, y: "1vh" })
     .to("#crown", { rotate: 0, delay: 1, y: 0 })
-    .to("#crown", { x: "8vw" })
+    .to("#crown", { x: xRight })
     .to("#crown", { rotate: 45, y: "1vh" })
     .to("#crown", { rotate: 0, delay: 1, y: 0 })
     .to("#crown", { x: 0 });
@@ -176,17 +176,14 @@ export const homeAnimation = () => {
 };
 
 /* About Section */
-const aboutQuoteAnimation = () => {
-  const splitQuoteText = new SplitText("#aboutQuoteText", {
-    type: "words, lines",
-    reduceWhiteSpace: false,
-  });
+let aboutQuoteAnimation;
 
-  const tl1 = gsap
+const aboutQuote1 = () => {
+  return gsap
     .timeline({
       scrollTrigger: {
         trigger: "#about",
-        start: "top 80%",
+        start: "top 70%",
         end: "top 5%",
         scrub: true,
       },
@@ -194,18 +191,23 @@ const aboutQuoteAnimation = () => {
     .fromTo(
       "#aboutQuoteText .fade",
       {
-        // x: "-10vw",/
         opacity: 0,
       },
       {
-        // x: 0,
         opacity: 1,
         ease: "slow",
         stagger: 0.2,
       }
     );
+};
 
-  const tl2 = gsap
+const aboutQuote2 = () => {
+  const splitQuoteText = new SplitText("#aboutQuoteText", {
+    type: "words, lines",
+    reduceWhiteSpace: false,
+  });
+
+  return gsap
     .timeline({
       scrollTrigger: {
         trigger: "#about",
@@ -227,14 +229,9 @@ const aboutQuoteAnimation = () => {
       splitQuoteText.words,
       {
         opacity: 0,
-        // stagger: 0.01,
       },
       "<"
     );
-
-  const mainTl = gsap.timeline().add(tl1).add(tl2);
-
-  return mainTl;
 };
 
 const aboutNarrativeAnimation = () => {
@@ -250,11 +247,9 @@ const aboutNarrativeAnimation = () => {
     .fromTo(
       "#narrativeAnimate",
       {
-        // x: "-10vw",/
         opacity: 0,
       },
       {
-        // x: 0,
         opacity: 1,
         ease: "slow",
         stagger: 0.3,
@@ -264,7 +259,7 @@ const aboutNarrativeAnimation = () => {
   const tl2 = gsap
     .timeline({
       scrollTrigger: {
-        trigger: "#aboutNarrativeContainer",
+        trigger: "#aboutLine",
         pin: "#aboutNarrativeContainer",
         start: "top top",
         end: "2500",
@@ -275,7 +270,7 @@ const aboutNarrativeAnimation = () => {
     .to(".narrativeClear", {
       opacity: 0,
       duration: 5,
-      delay: 3,
+      delay: 10,
       ease: "slow",
     })
     .fromTo(
@@ -291,19 +286,31 @@ const aboutNarrativeAnimation = () => {
     )
     .add(animateMove, "<0.1")
     .to(
-      "#a, #z",
+      "#a",
       {
         scale: 4,
+        duration: 5,
+        ease: "slow",
       },
-      "<"
+      ">8"
     )
     .to(
       "#arrow",
       {
-        scale: 6,
+        scale: 10,
         transformOrigin: "middle",
+        duration: 5,
       },
-      ">2"
+      "<5"
+    )
+    .to(
+      "#z",
+      {
+        scale: 4,
+        duration: 5,
+        ease: "slow",
+      },
+      "<5"
     )
     .fromTo(
       "#aboutCrown",
@@ -315,14 +322,13 @@ const aboutNarrativeAnimation = () => {
         ease: "slow",
         duration: 3,
       },
-      ">"
+      ">5"
     )
     .to("#aboutTagline", {
       opacity: 1,
       duration: 5,
     });
   const mainTl = gsap.timeline().add(tl2).add(tl1, "<");
-
   return mainTl;
 };
 
@@ -388,140 +394,69 @@ const servicesHeaderAnimation = () => {
     reduceWhiteSpace: false,
   });
 
-  const gearAnimation = () => {
-    const tl = gsap
-      .timeline()
-      .fromTo(
+  const tl1 = () => {
+    return gsap
+      .timeline({})
+      .from([split1.chars, "#paintBrush", "#gear"], {
+        opacity: 0,
+        x: "-40px",
+        duration: 1,
+        ease: "expo.in",
+      })
+      .to(
         "#gear",
         {
-          opacity: 0,
+          rotateZ: 180,
+          repeat: 1,
+          duration: 1.5,
+          ease: "expo.out",
         },
-        {
-          opacity: 1,
-          ease: "slow",
-          duration: 2,
-        }
+        ">1"
       )
-      .to("#gear", {
-        rotateZ: 180,
-        repeat: 1,
-        duration: 2,
-        // delay: 1,
+      .to([split1.chars, "#paintBrush", "#gear"], {
+        opacity: 0,
+        x: "40px",
+        duration: 1,
         ease: "expo.out",
       });
-
-    return tl;
   };
 
-  const brushAnimation = () => {
-    return gsap.fromTo(
-      "#paintBrush",
-      {
+  const tl2 = () => {
+    return gsap
+      .timeline({})
+      .from([split2.chars, "#lightbulb", "#bullhorn"], {
         opacity: 0,
-      },
-      {
-        opacity: 1,
-        duration: 2,
-        ease: "slow",
-      }
-    );
-  };
-
-  const tl1 = gsap
-    .timeline({})
-    .from(split1.chars, {
-      opacity: 0,
-      x: "-5vw",
-      duration: 2,
-      ease: "slow",
-    })
-    .add(brushAnimation(), "<50%")
-    .add(gearAnimation(), "<0.2")
-    .to(split1.chars, {
-      opacity: 0,
-      x: "5vw",
-      duration: 2,
-    })
-    .to(
-      "#paintBrush, #gear",
-      {
-        opacity: 0,
+        x: "-40px",
         duration: 1,
-        ease: "slow",
-      },
-      "<"
-    );
-
-  const lightbulbAnimation = () => {
-    return gsap.timeline().fromTo(
-      "#lightbulb",
-      {
+        ease: "expo.in",
+      })
+      .fromTo(
+        "#lightbulb",
+        {
+          scale: 1,
+        },
+        {
+          scale: 1.1,
+          duration: 1,
+          ease: "expo.out",
+        },
+        ">1"
+      )
+      .to([split2.chars, "#lightbulb", "#bullhorn"], {
         opacity: 0,
-      },
-      {
-        opacity: 1,
-        ease: "slow",
-        duration: 2,
-      }
-    );
-  };
-
-  const bullhornAnimation = () => {
-    return gsap.fromTo(
-      "#bullhorn",
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        duration: 2,
-        ease: "slow",
-      }
-    );
-  };
-
-  const tl2 = gsap
-    .timeline()
-    .from(split2.chars, {
-      opacity: 0,
-      x: "-5vw",
-      duration: 2,
-      ease: "slow",
-    })
-    .add(lightbulbAnimation(), "<60%")
-    .add(bullhornAnimation(), "<50%")
-    .fromTo(
-      "#lightbulb",
-      {
-        scale: 1,
-      },
-      {
-        scale: 1.1,
+        x: "40px",
         duration: 1,
         ease: "expo.out",
-      }
-    )
-    .to(split2.chars, {
-      opacity: 0,
-      x: "5vw",
-      duration: 1,
-    })
-    .to(
-      "#lightbulb, #bullhorn",
-      {
-        opacity: 0,
-        duration: 1,
-        ease: "slow",
-      },
-      "<"
-    );
+      });
+  };
 
   const mainTl = gsap
     .timeline({
       repeat: -1,
     })
-    .add(tl1)
-    .add(tl2);
+    .add(tl1())
+    .add(tl2());
+
   return mainTl;
 };
 
@@ -593,7 +528,7 @@ const servicesContentAnimation = () => {
       start: "top top",
       end: "300",
       scrub: true,
-      anticipatePin: true
+      anticipatePin: true,
     },
   });
   const mainTl = gsap.timeline().add(tl1);
@@ -608,3 +543,26 @@ export const servicesAnimation = () => {
     .add(servicesContentAnimation());
   return mainTl;
 };
+
+/*** Mobile Responsive Breakpoints***/
+let mm = gsap.matchMedia();
+let xLeft;
+let xRight;
+
+mm.add("(min-width: 360px)", (context) => {
+  context.add((xLeft = "-90px"), (xRight = "90px"));
+  context.add(
+    (aboutQuoteAnimation = () => {
+      return gsap.timeline().add(aboutQuote1());
+    })
+  );
+});
+
+mm.add("(min-width: 576px)", (context) => {
+  context.add((xLeft = "-102.5px"), (xRight = "102.5px"));
+  context.add(
+    (aboutQuoteAnimation = () => {
+      return gsap.timeline().add(aboutQuote1()).add(aboutQuote2());
+    })
+  );
+});

@@ -1,78 +1,113 @@
 #headerDiv{
-    /* background-color:  var(--dark-gray); */
-    min-height: 100vh;
-    width: 100%;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* padding-top: 25px; */
+    margin:0
 }
 
 #titleDiv{
-    width: 95%;
-    margin: -6vw auto 0 auto;
+    width: 100%;
+}
+
+#titleDiv p{
+    margin-bottom: 0;
 }
 
 .title{
     margin: 0 5px;
-    font-size: 5vw;
     text-shadow: 3px 3px var(--darker-gray);
     font-weight: 300;
-  }
+}
 
-  #subtitleDiv{
-    margin-top: -2.5vw;
-    font-size: 3.5vw;
+#subtitleDiv{
     text-shadow: 1px 1px var(--darker-gray);
     color: var(--lighter-yellow);
-  }
-
-#headerDiv h1, #headerDiv h2, #headerDiv h3{
-    color:var(--yellow);
-
-}
-
-#headerDiv a{
-    text-decoration: none;
-}
-
-#headerDiv a:hover{
-    text-decoration: underline;
-    text-decoration-color: var(--light-gray);
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-}
-
+ }
 
 #computer{
     opacity: 0;
-    width: 15vw;
-    /* filter:drop-shadow(3px 3px var(--darker-gray)); */
 }
 
 #crown{
-    width: 6vw;
+    width: 75px;
     opacity: 0;
-    margin-bottom: -8px;
-    /* margin-right: 2.5vw; */
     filter:drop-shadow(2px 2px var(--darker-gray));
 }
 
-#logoDiv{
-    padding-top: 10vh;
+#computerDiv{
+    position: relative;
 }
 
-#computerText{
-    margin: -13.5vw auto 14vw auto;
-    width: 13vw;
-    padding: 0 1% 0 1.25%;
+#computerTextDiv{
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
     color: var(--darker-gray);
     z-index: 2;
-    position: relative;
-    font-size: 3vw;
-    font-weight: bold;
+    position: absolute;
+    font-size: 40px;
 }
 
-#computerText .col-sm-3, #computerText .col-sm-6{
-    padding: 0;
+#computerTextDiv p{
+    margin-bottom: 0;
+}
+
+#recentDiv{
+    text-align: right;
+}
+
+/*** Media Queries ***/
+@media (min-width:360px) {
+    #computer{
+        width:175px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    #subtitleDiv{
+        font-size: 20px;
+    }
+
+    #recentDiv{
+        font-size: 14px;
+        padding: 100px 10px 0 0;
+    }
+
+    #recentDiv span{
+        display: block;
+    }
+}
+
+@media (min-width:576px) {
+    #computer{
+        width:200px;
+    }
+
+    #computerTextDiv span{
+        padding: 0 5px;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+
+    #subtitleDiv{
+        font-size: 30px;
+    }
+
+    #recentDiv{
+        font-size: 20px;
+        padding: 50px 10px 0 0;
+    }
+}
+
+@media (min-width:768px) {
+    #recentDiv{
+        margin-right: 10%;
+    }
+
+    #recentDiv span{
+        display: inline;
+    }
 }

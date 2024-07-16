@@ -1,0 +1,16 @@
+@media (min-width:360px) {
+    #servicesQuoteDiv{
+        padding: 0 5%;
+    }
+
+    #servicesQuoteDiv h1{
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+}
+
+#servicesQuoteDiv{
+    color: var(--light-teal);
+    margin: 0;
+    height: 25vh;
+}

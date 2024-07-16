@@ -6,7 +6,6 @@ import { Outlet } from "react-router-dom";
 import ScrollToTop from "./components/sub-components/ScrollToTop";
 
 function App() {
-  // const [color, changeColor] = useState();
 
   useEffect(() => {}, []);
 
