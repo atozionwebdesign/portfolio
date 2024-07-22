@@ -80,25 +80,20 @@ const TechTable = (props) => {
     <>
       {platform.length > 0 && platform.length !== 0 ? (
         <Row className="">
-          <Col className="right tech-table-heading" sm="3" >
-            <p className="p-mid ">PLATFORM:</p>
+          <Col sm="3" >
+            <p className="p-mid tech-table-heading">PLATFORM:</p>
           </Col>
           <Col className="left" sm="9">
             <Row>
               {platform.map((item) => (
-                // <Col className="center" sm={true}>
                     <div className="tech-icon-div">
-                  {/* <div> */}
-
                       <img
                         src={technologies[item].icon}
                         alt=""
                         className="tech-icon"
                       />
-                    {/* </div> */}
-                    <p style={{display: "block"}} className="p-xsmall">{technologies[item].name}</p>
+                    <p style={{display: "block"}} className="p-small">{technologies[item].name}</p>
                   </div>
-                // </Col>
               ))}
             </Row>
           </Col>
@@ -108,25 +103,20 @@ const TechTable = (props) => {
       )}
       {frontEnd.length > 0 && frontEnd.length !== 0 ? (
         <Row className="bordered-row">
-          <Col className="right" sm="3">
+          <Col sm="3">
             <p className="p-mid tech-table-heading">FRONT-END:</p>
           </Col>
           <Col className="left" sm="9">
             <Row>
               {frontEnd.map((item) => (
-                // <Col className="center" sm={true}>
-                  // <div>
                     <div className="tech-icon-div">
                       <img
                         src={technologies[item].icon}
                         alt=""
                         className="tech-icon"
                       />
-                    {/* </div> */}
-
-                    <p className="p-xsmall">{technologies[item].name}</p>
+                    <p className="p-small">{technologies[item].name}</p>
                   </div>
-                // </Col>
               ))}
             </Row>
           </Col>
@@ -136,24 +126,20 @@ const TechTable = (props) => {
       )}
       {backEnd.length > 0 && backEnd.length !== 0 ? (
         <Row className="bordered-row">
-          <Col className="right" sm="3">
+          <Col sm="3">
             <p className="p-mid tech-table-heading">BACK-END:</p>
           </Col>
           <Col className="left" sm="9">
             <Row>
               {backEnd.map((item) => (
-                // <Col className="center" sm={true}>
-                  // <div>
                     <div className="tech-icon-div">
                       <img
                         src={technologies[item].icon}
                         alt=""
                         className="tech-icon"
                       />
-                    {/* </div> */}
-                    <p className="p-xsmall">{technologies[item].name}</p>
+                    <p className="p-small">{technologies[item].name}</p>
                   </div>
-                // </Col>
               ))}
             </Row>
           </Col>
@@ -163,24 +149,20 @@ const TechTable = (props) => {
       )}
       {api.length > 0 && api.length !== 0 ? (
         <Row className="bordered-row">
-          <Col className="right" sm="3">
+          <Col sm="3">
             <p className="p-mid tech-table-heading">API:</p>
           </Col>
           <Col className="left" sm="9">
             <Row>
               {api.map((item) => (
-                // <Col className="center" sm={true}>
-                  // <div>
                     <div className="tech-icon-div">
                       <img
                         src={technologies[item].icon}
                         alt=""
                         className="tech-icon"
                       />
-                    {/* </div> */}
-                    <p className="p-xsmall">{technologies[item].name}</p>
+                    <p className="p-small">{technologies[item].name}</p>
                   </div>
-                // </Col>
               ))}
             </Row>
           </Col>
@@ -190,24 +172,20 @@ const TechTable = (props) => {
       )}
       {graphics.length > 0 && graphics.length !== 0 ? (
         <Row className="bordered-row">
-          <Col className="right" sm="3">
+          <Col sm="3">
             <p className="p-mid tech-table-heading">GRAPHICS:</p>
           </Col>
           <Col className="left" sm="9">
             <Row>
               {graphics.map((item) => (
-                // <Col className="center" sm={true}>
-                  // <div>
                     <div className="tech-icon-div">
                       <img
                         src={technologies[item].icon}
                         alt=""
                         className="tech-icon"
                       />
-                    {/* </div> */}
-                    <p className="p-xsmall">{technologies[item].name}</p>
+                    <p className="p-small">{technologies[item].name}</p>
                   </div>
-                // </Col>
               ))}
             </Row>
           </Col>

@@ -46,7 +46,8 @@ const NavigationModal = () => {
               <div className="top-bordered-col">
                 <p className="no-margin">LET'S DISCUSS A</p>
                 <h1 className="special-cursor">
-                  <Link to={`/contact`}>NEW PROJECT</Link>
+                  {/* <Link to={`/contact`}>NEW PROJECT</Link> */}
+                  <Link to={`/`}>NEW PROJECT</Link>
                 </h1>
               </div>
             </Col>

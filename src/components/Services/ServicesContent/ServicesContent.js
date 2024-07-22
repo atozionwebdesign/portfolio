@@ -12,7 +12,7 @@ const ServicesContent = () => {
 
   return (
     <div id="servicesList">
-      <div className="section-header">OUR SERVICES</div>
+      <div className="section-header">SERVICES</div>
       <Row>
         <Col xs={2}>
           <div className="jumbo-text-solid left-number">1</div>

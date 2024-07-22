@@ -71,13 +71,6 @@
     font-size: 18px;
   }
 
-  :root{
-    --p-xlarge: 18px;
-    --p-large: 16px;
-    --p-mid: 14px;
-    --p-small: 12px;
-    --p-xsmall: 11px;
-  }
 }
 
 @media (min-width:576px) {

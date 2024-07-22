@@ -1,9 +1,37 @@
+@media (min-width:360px) {
+.footer-right{
+    padding-top: 25px;
+}
+}
+
+@media (min-width:576px) {
+.footer-right{
+    text-align: right;
+    padding-top: 0;
+}
+
+#footerDiv{
+    width: 80%;
+}
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width:1200px) {
+
+}
+
 #footerContainer{
     background-color: var(--dark-gray);
 }
 
 #footerDiv{
-    width: 80%;
     margin: 0 auto;
     border-top: 1px solid var(--yellow) ;
     color: var(--light-teal);

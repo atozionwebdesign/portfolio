@@ -23,7 +23,7 @@ const Footer = () => {
               <i className="bi bi-telephone sm-icon"></i> 202.681.3589
             </p>
           </Col>
-          <Col className="right" sm={6}>
+          <Col className="footer-right" sm={6}>
             <a
               href={require("../../documents/Resume-Stith,Ashley-Jul24.pdf")}
               alt=""
@@ -34,23 +34,22 @@ const Footer = () => {
             </a>
             <p>Let's discuss a new project</p>
             <p>
-            <a
-          href="https://github.com/atozionwebdesign"
-          alt=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="bi bi-github sm-icon"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ashleystith/"
-          alt=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="bi bi-linkedin"></i>
-        </a>
-              {/* <i className="bi bi-youtube sm-icon"></i> */}
+              <a
+                href="https://github.com/atozionwebdesign"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-github sm-icon"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ashleystith/"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-linkedin"></i>
+              </a>
             </p>
           </Col>
         </Row>
