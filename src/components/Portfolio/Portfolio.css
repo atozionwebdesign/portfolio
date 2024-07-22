@@ -9,6 +9,7 @@
 
     .logo-img{
         max-width: 300px;
+        margin-bottom: 100px
     }
 
     .project-header{
@@ -39,7 +40,11 @@
     }
 
     .typography-left{
-        border-right: 1px dotted var(--teal);
+        text-align: right;
+    }
+
+    .typography-right{
+        border-left: 1px dotted var(--teal);
     }
 }
 

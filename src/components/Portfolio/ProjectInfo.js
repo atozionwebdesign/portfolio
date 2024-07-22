@@ -86,7 +86,7 @@ const ProjectInfo = (props) => {
           <h4 className="section-header">
             ABOUT
           </h4>
-          <p className="p-xlarge">{data.about}</p>
+          <p className="p-large">{data.about}</p>
         </Col>
       </Row>
 
@@ -208,6 +208,7 @@ const ProjectInfo = (props) => {
         <Row className="justify-content-center align-items-center project-typography-div">
           <Col
             className="col typography-left"
+            xs={12}
             sm={5}
             style={{
 
@@ -218,7 +219,6 @@ const ProjectInfo = (props) => {
             data.designTypography.length !== 0 ? (
               <>
                 <p className="p-small no-margin">Header:</p>
-
                 <h1
                   className={classNames(
                     "project-typography-header",
@@ -232,7 +232,7 @@ const ProjectInfo = (props) => {
 
                 <p
                   className={classNames(
-                    "project-typography-subheader p-xlarge",
+                    "project-typography-subheader ",
                     subheader.fontFamily
                   )}
                 >
@@ -243,7 +243,7 @@ const ProjectInfo = (props) => {
               ""
             )}
           </Col>
-          <Col className="col typography-right" sm={7} style={{ color: "var(--dark-gray)" }}>
+          <Col className="col typography-right" xs={12} sm={7} style={{ color: "var(--dark-gray)" }}>
             <p className="left">{data.designTypographyNarrative}</p>
           </Col>
         </Row>

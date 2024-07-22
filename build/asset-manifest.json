@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.23e50ff7.css",
-    "main.js": "/static/js/main.6f0002da.js",
+    "main.css": "/static/css/main.12d4fb4b.css",
+    "main.js": "/static/js/main.26567617.js",
     "static/media/Resume-Stith,Ashley-Jul24.pdf": "/static/media/Resume-Stith,Ashley-Jul24.6f4d8d2d6fcdc0193752.pdf",
     "static/media/zionTV-abc-front.png": "/static/media/zionTV-abc-front.894879da55468f4af5da.png",
     "static/media/whougot-signup.png": "/static/media/whougot-signup.ac809119cfd49d1bd176.png",
@@ -60,11 +60,11 @@
     "static/media/font-awesome.svg": "/static/media/font-awesome.3179d5f6740a57221bbc32e66bdc5c2c.svg",
     "static/media/geocode.svg": "/static/media/geocode.ff44ee5ff81eb40458a9aa2a9e2d2962.svg",
     "static/media/axios.svg": "/static/media/axios.a1544b1e502776976c6912c28ffd9c61.svg",
-    "main.23e50ff7.css.map": "/static/css/main.23e50ff7.css.map",
-    "main.6f0002da.js.map": "/static/js/main.6f0002da.js.map"
+    "main.12d4fb4b.css.map": "/static/css/main.12d4fb4b.css.map",
+    "main.26567617.js.map": "/static/js/main.26567617.js.map"
   },
   "entrypoints": [
-    "static/css/main.23e50ff7.css",
-    "static/js/main.6f0002da.js"
+    "static/css/main.12d4fb4b.css",
+    "static/js/main.26567617.js"
   ]
 }
